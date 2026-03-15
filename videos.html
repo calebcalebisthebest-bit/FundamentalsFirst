@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos | Basketball Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Fundamentals<span>First</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fundamentals.html">Fundamentals</a></li>
+                <li><a href="drills.html">Drills</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header videos-header">
+            <div class="header-content">
+                <h1>🏀 Basketball Basics Videos</h1>
+                <p>Master the fundamentals with my comprehensive video tutorials covering essential basketball skills.</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Video Tutorials</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Skills Covered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-decoration">
+                <div class="basketball-icon">🎥</div>
+            </div>
+        </section>
+
+        <!-- Torn Paper Divider -->
+        <div class="section-divider primary-to-light">
+          <svg class="torn-paper-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="videosGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="hsl(18, 100%, 50%)" />
+                <stop offset="100%" stop-color="#f8f9fa" />
+              </linearGradient>
+              <filter id="videosShadow1" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+              </filter>
+            </defs>
+            <!-- Top section background -->
+            <rect width="1200" height="30" fill="hsl(18, 100%, 50%)"/>
+            <!-- Bottom section background -->
+            <rect y="30" width="1200" height="30" fill="#f8f9fa"/>
+            <!-- Torn paper path -->
+            <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 L1200,60 L0,60 Z"
+                  fill="#f8f9fa"
+                  filter="url(#videosShadow1)"/>
+            <!-- Ripped edge detail -->
+            <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 Q1180,28 1160,31 Q1140,29 1120,32 Q1100,30 1080,33 Q1060,31 1040,34 Q1020,32 1000,35 Q980,33 960,36 Q940,34 920,37 Q900,35 880,38 Q860,36 840,39 Q820,37 800,40 Q780,38 760,41 Q740,39 720,42 Q700,40 680,43 Q660,41 640,44 Q620,42 600,45 Q580,43 560,46 Q540,44 520,47 Q500,45 480,48 Q460,46 440,49 Q420,47 400,50 Q380,48 360,51 Q340,49 320,52 Q300,50 280,53 Q260,51 240,54 Q220,52 200,55 Q180,53 160,56 Q140,54 120,57 Q100,55 80,58 Q60,56 40,59 Q20,57 0,60"
+                  stroke="rgba(0,0,0,0.1)"
+                  stroke-width="0.5"
+                  fill="none"/>
+          </svg>
+        </div>
+
+        <div class="container">
+            <!-- Videos Grid -->
+            <section class="videos-container">
+                <div class="videos-grid">
+                    <!-- Video 1: Form Shooting Basics -->
+                    <article class="video-card" data-skill="shooting">
+                        <div class="video-header">
+                            <h3>Form Shooting Basics</h3>
+                            <span class="skill-badge shooting">Shooting</span>
+                        </div>
+                        <p class="video-description">Learn the fundamentals of proper shooting form and technique.</p>
+                        <div class="video-embed">
+                            <video controls preload="metadata" poster="drill-thumbnails/form-shooting.jpg">
+                                <source src="c:\Users\HP\Downloads\Shoot with great form - NBA India (1080p, h264, youtube).mp4" type="video/mp4">
+                                <source src="drill-videos/form-shooting.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+
+                    <!-- Video 2: Figure 8 Dribbling Basics -->
+                    <article class="video-card" data-skill="dribbling">
+                        <div class="video-header">
+                            <h3>Figure 8 Dribbling Basics</h3>
+                            <span class="skill-badge dribbling">Dribbling</span>
+                        </div>
+                        <p class="video-description">Master ball handling with the figure-8 dribbling pattern.</p>
+                        <div class="video-embed">
+                            <video controls preload="metadata">
+                                <source src="c:\Users\HP\Downloads\videoplayback.mp4" type="video/mp4">
+                                <source src="drill-videos/figure-8.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+
+                    <!-- Video 3: Wall Passing Basics -->
+                    <article class="video-card" data-skill="passing">
+                        <div class="video-header">
+                            <h3>Wall Passing Basics</h3>
+                            <span class="skill-badge passing">Passing</span>
+                        </div>
+                        <p class="video-description">Develop accurate passing technique and wrist strength.</p>
+                        <div class="video-embed">
+                            <video controls preload="metadata">
+                                <source src="c:\Users\HP\Downloads\Individual Wall-Passing Drill - Bartlett Basketball Academy (360p, h264, youtube).mp4" type="video/mp4">
+                                <source src="drill-videos/wall-passing.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+
+                    <!-- Video 4: Defensive Footwork Basics -->
+                    <article class="video-card" data-skill="defense">
+                        <div class="video-header">
+                            <h3>Defensive Footwork Basics</h3>
+                            <span class="skill-badge defense">Defense</span>
+                        </div>
+                        <p class="video-description">Learn proper defensive stance and movement fundamentals.</p>
+                        <div class="video-embed">
+                            <video controls preload="metadata">
+                                <source src="c:\Users\HP\Downloads\Fundamentals of A Defensive Stance - Jr. NBA Jr. WNBA (1080p, h264, youtube).mp4" type="video/mp4">
+                                <source src="drill-videos/defensive-footwork.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+
+                    <!-- Video 5: Catch and Shoot Basics -->
+                    <article class="video-card" data-skill="shooting">
+                        <div class="video-header">
+                            <h3>Catch and Shoot Basics</h3>
+                            <span class="skill-badge shooting">Shooting</span>
+                        </div>
+                        <p class="video-description">Improve quick release and game-ready shooting skills.</p>
+                        <div class="video-embed">
+                            <video controls preload="metadata">
+                                <source src="c:\Users\HP\Downloads\Catch and Shoot Basics - Basketball Skills - dominatethecourt (720p, h264, youtube).mp4" type="video/mp4">
+                                <source src="drill-videos/catch-shoot.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+
+                    <!-- Video 6: Full Court Dribbling Basics -->
+                    <article class="video-card" data-skill="dribbling">
+                        <div class="video-header">
+                            <h3>Full Court Dribbling Basics</h3>
+                            <span class="skill-badge dribbling">Dribbling</span>
+                        </div>
+                        <p class="video-description">Build endurance and ball security at game pace.</p>
+                        <div class="video-embed">
+                            <video controls preload="metadata">
+                                <source src="c:\Users\HP\Downloads\videoplayback (2).mp4" type="video/mp4">
+                                <source src="drill-videos/full-court.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fundamentals First</h4>
+                    <p>Building champions through fundamental basketball training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fundamentals.html">Fundamentals</a></li>
+                        <li><a href="drills.html">Drills</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Follow for more training tips and updates.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fundamentals First. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

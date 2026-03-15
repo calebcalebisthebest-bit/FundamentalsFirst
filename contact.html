@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Basketball Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Fundamentals<span>First</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fundamentals.html">Fundamentals</a></li>
+                <li><a href="drills.html">Drills</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header contact-header">
+            <div class="header-content">
+                <h1>📞 Get in Touch</h1>
+                <p>Ready to take your basketball skills to the next level? I'm here to help you succeed.</p>
+                <div class="header-decoration">
+                    <div class="contact-icon">🏀</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Torn Paper Divider -->
+        <div class="section-divider primary-to-light">
+          <svg class="torn-paper-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="contactGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="hsl(18, 100%, 50%)" />
+                <stop offset="100%" stop-color="#f8f9fa" />
+              </linearGradient>
+              <filter id="contactShadow1" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+              </filter>
+            </defs>
+            <!-- Top section background -->
+            <rect width="1200" height="30" fill="hsl(18, 100%, 50%)"/>
+            <!-- Bottom section background -->
+            <rect y="30" width="1200" height="30" fill="#f8f9fa"/>
+            <!-- Torn paper path -->
+            <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 L1200,60 L0,60 Z"
+                  fill="#f8f9fa"
+                  filter="url(#contactShadow1)"/>
+            <!-- Ripped edge detail -->
+            <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 Q1180,28 1160,31 Q1140,29 1120,32 Q1100,30 1080,33 Q1060,31 1040,34 Q1020,32 1000,35 Q980,33 960,36 Q940,34 920,37 Q900,35 880,38 Q860,36 840,39 Q820,37 800,40 Q780,38 760,41 Q740,39 720,42 Q700,40 680,43 Q660,41 640,44 Q620,42 600,45 Q580,43 560,46 Q540,44 520,47 Q500,45 480,48 Q460,46 440,49 Q420,47 400,50 Q380,48 360,51 Q340,49 320,52 Q300,50 280,53 Q260,51 240,54 Q220,52 200,55 Q180,53 160,56 Q140,54 120,57 Q100,55 80,58 Q60,56 40,59 Q20,57 0,60"
+                  stroke="rgba(0,0,0,0.1)"
+                  stroke-width="0.5"
+                  fill="none"/>
+          </svg>
+        </div>
+
+        <div class="container contact-container">
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <div class="section-header">
+                    <h2>📝 Send a Message</h2>
+                    <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                </div>
+                <div class="contact-form-card">
+                    <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Your Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="question">General Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="training">Training Inquiry</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="issue">Report an Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Your Age <span class="required">*</span></label>
+                        <select id="age" name="age" required>
+                            <option value="">Select age group</option>
+                            <option value="under-12">Under 12</option>
+                            <option value="12-15">12-15 years</option>
+                            <option value="16-18">16-18 years</option>
+                            <option value="18-plus">18+ (Parent/Coach)</option>
+                        </select>
+                        <span class="error-message" id="age-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Subscribe to my newsletter for training tips and updates
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <p>✓ Thank you for your message! We'll get back to you soon.</p>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Contact Information Section -->
+            <section class="contact-info-section">
+                <div class="section-header">
+                    <h2>📍 Other Ways to Reach Me</h2>
+                    <p>Multiple ways to connect and get your questions answered.</p>
+                </div>
+
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:info@fundamentalsfirst.com">calebcalebisthebest@gmail.com</a></p>
+                        <p>I respond within 24 hours</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>📱 Phone</h3>
+                        <p><a href="tel:555-0123">(555) 012-3456</a></p>
+                        <p>Available Monday–Friday, 3–6 PM</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>📍 Location</h3>
+                        <p>Jewels International School of Kinsasha</p>
+                        <p>Training sessions available year-round</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section in Contact -->
+            <section class="contact-faq">
+                <div class="section-header">
+                    <h2>❓ Quick Help & FAQ</h2>
+                    <p>Find answers to common questions about training and the website.</p>
+                </div>
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>How do I report a technical issue on the website?</summary>
+                        <p>Please use the contact form above and select "Report an Issue" as your subject. Provide as much detail as possible about what you experienced.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I schedule a private coaching session?</summary>
+                        <p>Yes! Contact us about private training availability. I offer sessions for individual players and small groups at my facility and other locations.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Are there team discounts available?</summary>
+                        <p>We offer special rates for full teams and school programs. Contact us to discuss partnership opportunities.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How can my school get involved?</summary>
+                        <p>Schools can partner with Fundamentals First for after-school programs, team development, and special clinics. Reach out to discuss possibilities.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you offer scholarships or financial assistance?</summary>
+                        <p>We believe every young athlete deserves access to quality training. Contact us to discuss financial arrangements and scholarship opportunities.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I give feedback about the website content?</summary>
+                        <p>Absolutely! I'd love to hear your suggestions. Use the feedback option in my contact form to help me improve your experience.</p>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter-section">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2>📧 Stay Updated</h2>
+                        <p>Get exclusive training tips, drill progressions, and basketball motivation delivered to your inbox.</p>
+                        <form id="newsletterForm" class="newsletter-form" novalidate>
+                        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                        <div class="newsletter-success" id="newsletterSuccess" style="display: none;">
+                            ✓ Thanks for subscribing!
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-banner contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>🏀 Ready to Start Training?</h2>
+                    <p>I'm here to help you improve your game. Let's work together to reach your basketball goals!</p>
+                    <div class="cta-buttons">
+                        <a href="fundamentals.html" class="btn btn-primary">Explore Fundamentals</a>
+                        <a href="drills.html" class="btn btn-secondary">View Training Drills</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fundamentals First</h3>
+                    <p>Empowering young athletes with the technical skills needed to excel on the court and build confidence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fundamentals.html">Fundamentals</a></li>
+                        <li><a href="drills.html">Drills</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:info@fundamentalsfirst.com">calebcalebisthebest@gmail.com</a></p>
+                    <p>Location: Jewels International School of Kinsasha</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fundamentals First. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

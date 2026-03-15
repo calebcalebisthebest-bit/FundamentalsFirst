@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Drills | Basketball Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Fundamentals<span>First</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fundamentals.html">Fundamentals</a></li>
+                <li><a href="drills.html">Drills</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header drills-header">
+            <div class="header-content">
+                <h1>🏀 Training Drills</h1>
+                <p>Practice with purpose. Master fundamental basketball skills through my comprehensive drill collection.</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Drills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Skills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Practice</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-decoration">
+                <div class="basketball-icon">🏀</div>
+            </div>
+        </section>
+
+        <!-- Torn Paper Divider -->
+        <div class="section-divider primary-to-light">
+          <svg class="torn-paper-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="drillsGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="hsl(18, 100%, 50%)" />
+                <stop offset="100%" stop-color="#f8f9fa" />
+              </linearGradient>
+              <filter id="drillsShadow1" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+              </filter>
+            </defs>
+            <!-- Top section background -->
+            <rect width="1200" height="30" fill="hsl(18, 100%, 50%)"/>
+            <!-- Bottom section background -->
+            <rect y="30" width="1200" height="30" fill="#f8f9fa"/>
+            <!-- Torn paper path -->
+            <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 L1200,60 L0,60 Z"
+                  fill="#f8f9fa"
+                  filter="url(#drillsShadow1)"/>
+            <!-- Ripped edge detail -->
+            <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 Q1180,28 1160,31 Q1140,29 1120,32 Q1100,30 1080,33 Q1060,31 1040,34 Q1020,32 1000,35 Q980,33 960,36 Q940,34 920,37 Q900,35 880,38 Q860,36 840,39 Q820,37 800,40 Q780,38 760,41 Q740,39 720,42 Q700,40 680,43 Q660,41 640,44 Q620,42 600,45 Q580,43 560,46 Q540,44 520,47 Q500,45 480,48 Q460,46 440,49 Q420,47 400,50 Q380,48 360,51 Q340,49 320,52 Q300,50 280,53 Q260,51 240,54 Q220,52 200,55 Q180,53 160,56 Q140,54 120,57 Q100,55 80,58 Q60,56 40,59 Q20,57 0,60"
+                  stroke="rgba(0,0,0,0.1)"
+                  stroke-width="0.5"
+                  fill="none"/>
+          </svg>
+        </div>
+
+        <div class="container">
+            <!-- Filter Controls -->
+            <section class="filter-section">
+                <h2>Filter by Skill</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Drills</button>
+                    <button class="filter-btn" data-filter="shooting">Shooting</button>
+                    <button class="filter-btn" data-filter="dribbling">Dribbling</button>
+                    <button class="filter-btn" data-filter="passing">Passing</button>
+                    <button class="filter-btn" data-filter="defense">Defense</button>
+                </div>
+                <div class="filter-info">
+                    <span class="drill-count">6 drills available</span>
+                </div>
+            </section>
+
+            <!-- Drills Grid -->
+            <section class="drills-container">
+                <div class="drill-list">
+                <!-- Drill 1: Form Shooting -->
+                <article class="drill-card" data-skill="shooting">
+                    <div class="drill-header">
+                        <h3>Form Shooting</h3>
+                        <span class="skill-badge shooting">Shooting</span>
+                    </div>
+                    <p class="drill-description">Build shooting consistency by perfecting your form from a close distance.</p>
+                    
+                    <details class="drill-details">
+                        <summary class="drill-toggle">View Instructions</summary>
+                        <div class="drill-content">
+                            <div class="progress-indicator">
+                                <label>
+                                    <input type="checkbox" class="drill-checkbox" data-drill="form-shooting">
+                                    Mark as Complete
+                                </label>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Duration: 10-15 minutes</h4>
+                                <h4>Equipment: Basketball, Hoop</h4>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol class="steps-list">
+                                    <li>Position yourself 2 feet directly in front of the basket</li>
+                                    <li>Set your feet shoulder-width apart with knees slightly bent</li>
+                                    <li>Shoot 10 shots using only your dominant hand, focusing on perfect form</li>
+                                    <li>After 10 makes, take 2 steps back and repeat</li>
+                                    <li>Continue until you're at the free-throw line</li>
+                                    <li>Focus on follow-through and consistent release point</li>
+                                </ol>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Tips for Success:</h4>
+                                <ul class="tips-list">
+                                    <li>Move to the next distance only after 10 consecutive makes</li>
+                                    <li>Shoot off the catch with a quick release</li>
+                                    <li>Keep your elbow tucked and eyes on the back of the rim</li>
+                                    <li>Record your shooting percentage to track progress</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- Drill 2: Figure 8 Dribbling -->
+                <article class="drill-card" data-skill="dribbling">
+                    <div class="drill-header">
+                        <h3>Figure 8 Dribbling</h3>
+                        <span class="skill-badge dribbling">Dribbling</span>
+                    </div>
+                    <p class="drill-description">Improve ball handling and court awareness through challenging dribble patterns.</p>
+                    
+                    <details class="drill-details">
+                        <summary class="drill-toggle">View Instructions</summary>
+                        <div class="drill-content">
+                            <div class="progress-indicator">
+                                <label>
+                                    <input type="checkbox" class="drill-checkbox" data-drill="figure-8">
+                                    Mark as Complete
+                                </label>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Duration: 10-15 minutes</h4>
+                                <h4>Equipment: Basketball, Open Space</h4>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol class="steps-list">
+                                    <li>Stand with feet shoulder-width apart in an open area</li>
+                                    <li>Dribble the ball in a figure-8 pattern through and around your legs</li>
+                                    <li>Start slowly, focusing on ball control and accuracy</li>
+                                    <li>Complete the pattern continuously for 2 minutes without looking down</li>
+                                    <li>Gradually increase speed while maintaining control</li>
+                                    <li>Switch to your off-hand and repeat</li>
+                                </ol>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Progression Levels:</h4>
+                                <ul class="tips-list">
+                                    <li><strong>Beginner:</strong> Dribble slowly, 1 minute per hand</li>
+                                    <li><strong>Intermediate:</strong> Increase speed, 2+ minutes total</li>
+                                    <li><strong>Advanced:</strong> Add crossover dribbles, alternate quickly</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- Drill 3: Wall Passing -->
+                <article class="drill-card" data-skill="passing">
+                    <div class="drill-header">
+                        <h3>Wall Passing</h3>
+                        <span class="skill-badge passing">Passing</span>
+                    </div>
+                    <p class="drill-description">Develop accurate passing technique and wrist strength through repetitive wall passes.</p>
+                    
+                    <details class="drill-details">
+                        <summary class="drill-toggle">View Instructions</summary>
+                        <div class="drill-content">
+                            <div class="progress-indicator">
+                                <label>
+                                    <input type="checkbox" class="drill-checkbox" data-drill="wall-pass">
+                                    Mark as Complete
+                                </label>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Duration: 10 minutes</h4>
+                                <h4>Equipment: Basketball, Wall</h4>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol class="steps-list">
+                                    <li>Stand 8-10 feet from a flat wall</li>
+                                    <li>Mark a target spot on the wall at chest height</li>
+                                    <li>Perform 30 chest passes, aiming for the target every time</li>
+                                    <li>Catch the return pass cleanly with proper hand positioning</li>
+                                    <li>Perform 30 bounce passes to the wall</li>
+                                    <li>Finish with 20 one-handed passes with each hand</li>
+                                </ol>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Focus Points:</h4>
+                                <ul class="tips-list">
+                                    <li>Step into each pass for full power</li>
+                                    <li>Use proper thumbs-down follow-through</li>
+                                    <li>Maintain consistent distance and target accuracy</li>
+                                    <li>Track how many times you hit the target</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- Drill 4: Defensive Slide -->
+                <article class="drill-card" data-skill="defense">
+                    <div class="drill-header">
+                        <h3>Defensive Slide</h3>
+                        <span class="skill-badge defense">Defense</span>
+                    </div>
+                    <p class="drill-description">Build defensive footwork and lateral agility with controlled sliding movements.</p>
+                    
+                    <details class="drill-details">
+                        <summary class="drill-toggle">View Instructions</summary>
+                        <div class="drill-content">
+                            <div class="progress-indicator">
+                                <label>
+                                    <input type="checkbox" class="drill-checkbox" data-drill="def-slide">
+                                    Mark as Complete
+                                </label>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Duration: 10-15 minutes</h4>
+                                <h4>Equipment: Open Court or Gym</h4>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol class="steps-list">
+                                    <li>Assume defensive stance: feet shoulder-width apart, knees bent</li>
+                                    <li>Slide laterally across the court without crossing your feet</li>
+                                    <li>Keep your hands active and in proper defensive position</li>
+                                    <li>Slide the length of the court and back (2 sets)</li>
+                                    <li>Add backward sliding: slide forward facing the basket, then backward</li>
+                                    <li>Increase speed while maintaining proper form</li>
+                                </ol>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Key Defensive Principles:</h4>
+                                <ul class="tips-list">
+                                    <li>Never cross your feet when sliding laterally</li>
+                                    <li>Keep low center of gravity throughout</li>
+                                    <li>Stay between your opponent and the basket</li>
+                                    <li>Use quick, controlled movements, not big steps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- Drill 5: Shooting Off the Catch -->
+                <article class="drill-card" data-skill="shooting">
+                    <div class="drill-header">
+                        <h3>Catch and Shoot</h3>
+                        <span class="skill-badge shooting">Shooting</span>
+                    </div>
+                    <p class="drill-description">Develop quick release and game-ready shooting skills with moving passes.</p>
+                    
+                    <details class="drill-details">
+                        <summary class="drill-toggle">View Instructions</summary>
+                        <div class="drill-content">
+                            <div class="progress-indicator">
+                                <label>
+                                    <input type="checkbox" class="drill-checkbox" data-drill="catch-shoot">
+                                    Mark as Complete
+                                </label>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Duration: 15-20 minutes</h4>
+                                <h4>Equipment: Basketball, Hoop, Rebounder (optional)</h4>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol class="steps-list">
+                                    <li>Find a partner to pass you the ball</li>
+                                    <li>Start at the wing (side of the key area)</li>
+                                    <li>Have your partner pass to you</li>
+                                    <li>Catch the ball with feet ready to shoot (jump stop)</li>
+                                    <li>Shoot immediately with a quick release</li>
+                                    <li>Move to different spots around the perimeter</li>
+                                    <li>Complete 10 makes from each spot</li>
+                                </ol>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Shooting Spots:</h4>
+                                <ul class="tips-list">
+                                    <li>Wing (left and right)</li>
+                                    <li>Corner (left and right)</li>
+                                    <li>Top of the key</li>
+                                    <li>Top right and left</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- Drill 6: Full Court Dribble -->
+                <article class="drill-card" data-skill="dribbling">
+                    <div class="drill-header">
+                        <h3>Full Court Dribble</h3>
+                        <span class="skill-badge dribbling">Dribbling</span>
+                    </div>
+                    <p class="drill-description">Build endurance and ball security while dribbling at game pace.</p>
+                    
+                    <details class="drill-details">
+                        <summary class="drill-toggle">View Instructions</summary>
+                        <div class="drill-content">
+                            <div class="progress-indicator">
+                                <label>
+                                    <input type="checkbox" class="drill-checkbox" data-drill="full-court">
+                                    Mark as Complete
+                                </label>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Duration: 10-15 minutes</h4>
+                                <h4>Equipment: Basketball, Full Court</h4>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Step-by-Step Instructions:</h4>
+                                <ol class="steps-list">
+                                    <li>Start at the baseline with the basketball</li>
+                                    <li>Dribble with control to the opposite end at game speed</li>
+                                    <li>Perform a crossover dribble at half-court</li>
+                                    <li>Continue to the basket and perform a lay-up</li>
+                                    <li>Return to the starting baseline</li>
+                                    <li>Complete 5 passes down and back per hand</li>
+                                </ol>
+                            </div>
+
+                            <div class="drill-section">
+                                <h4>Variations:</h4>
+                                <ul class="tips-list">
+                                    <li><strong>Speed Variation:</strong> Start slow, gradually increase tempo</li>
+                                    <li><strong>Ball Protection:</strong> Use off-arm to shield defensive pressure</li>
+                                    <li><strong>Eyes Up:</strong> Keep focus on court, not the ball</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+                </div>
+            </section>
+
+            <!-- Torn Paper Divider -->
+            <div class="section-divider light-to-white">
+              <svg class="torn-paper-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="drillsGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#f8f9fa" />
+                    <stop offset="100%" stop-color="#ffffff" />
+                  </linearGradient>
+                  <filter id="drillsShadow2" x="-50%" y="-50%" width="200%" height="200%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+                  </filter>
+                </defs>
+                <!-- Top section background -->
+                <rect width="1200" height="30" fill="#f8f9fa"/>
+                <!-- Bottom section background -->
+                <rect y="30" width="1200" height="30" fill="#ffffff"/>
+                <!-- Torn paper path -->
+                <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 L1200,60 L0,60 Z"
+                      fill="#ffffff"
+                      filter="url(#drillsShadow2)"/>
+                <!-- Ripped edge detail -->
+                <path d="M0,30 Q150,35 300,28 T600,32 T900,25 T1200,30 Q1180,28 1160,31 Q1140,29 1120,32 Q1100,30 1080,33 Q1060,31 1040,34 Q1020,32 1000,35 Q980,33 960,36 Q940,34 920,37 Q900,35 880,38 Q860,36 840,39 Q820,37 800,40 Q780,38 760,41 Q740,39 720,42 Q700,40 680,43 Q660,41 640,44 Q620,42 600,45 Q580,43 560,46 Q540,44 520,47 Q500,45 480,48 Q460,46 440,49 Q420,47 400,50 Q380,48 360,51 Q340,49 320,52 Q300,50 280,53 Q260,51 240,54 Q220,52 200,55 Q180,53 160,56 Q140,54 120,57 Q100,55 80,58 Q60,56 40,59 Q20,57 0,60"
+                      stroke="rgba(0,0,0,0.1)"
+                      stroke-width="0.5"
+                      fill="none"/>
+              </svg>
+            </div>
+
+            <!-- Completion Tracker -->
+            <section class="progress-section">
+                <h2>Your Progress</h2>
+                <div class="progress-tracker">
+                    <div class="progress-stats">
+                        <div class="stat">
+                            <h4>Drills Completed</h4>
+                            <p class="stat-number" id="drills-completed">0</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Total Drills</h4>
+                            <p class="stat-number">6</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Completion Rate</h4>
+                            <p class="stat-number" id="completion-rate">0%</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-label">Overall Progress</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Torn Paper Divider -->
+        <div class="section-divider light-to-primary">
+          <svg class="torn-paper-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="drillsGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f8f9fa" />
+                <stop offset="100%" stop-color="hsl(18, 100%, 50%)" />
+              </linearGradient>
+              <filter id="drillsShadow3" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.1)"/>
+              </filter>
+            </defs>
+            <!-- Top section background -->
+            <rect width="1200" height="30" fill="#f8f9fa"/>
+            <!-- Bottom section background -->
+            <rect y="30" width="1200" height="30" fill="hsl(18, 100%, 50%)"/>
+            <!-- Torn paper path -->
+            <path d="M0,30 Q150,25 300,32 T600,28 T900,35 T1200,30 L1200,60 L0,60 Z"
+                  fill="hsl(18, 100%, 50%)"
+                  filter="url(#drillsShadow3)"/>
+            <!-- Ripped edge detail -->
+            <path d="M0,30 Q150,25 300,32 T600,28 T900,35 T1200,30 Q1180,32 1160,29 Q1140,31 1120,28 Q1100,30 1080,27 Q1060,29 1040,26 Q1020,28 1000,25 Q980,27 960,24 Q940,26 920,23 Q900,25 880,22 Q860,24 840,21 Q820,23 800,20 Q780,22 760,19 Q740,21 720,18 Q700,20 680,17 Q660,19 640,16 Q620,18 600,15 Q580,17 560,14 Q540,16 520,13 Q500,15 480,12 Q460,14 440,11 Q420,13 400,10 Q380,12 360,9 Q340,11 320,8 Q300,10 280,7 Q260,9 240,6 Q220,8 200,5 Q180,7 160,4 Q140,6 120,3 Q100,5 80,2 Q60,4 40,1 Q20,3 0,0"
+                  stroke="rgba(0,0,0,0.1)"
+                  stroke-width="0.5"
+                  fill="none"/>
+          </svg>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Consistency is Key</h2>
+                <p>Complete these drills regularly to see rapid improvement in your skills. Track your progress and celebrate every milestone!</p>
+                <a href="fundamentals.html" class="btn btn-secondary">Review Fundamentals</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fundamentals First</h3>
+                    <p>Empowering young athletes with the technical skills needed to excel on the court and build confidence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fundamentals.html">Fundamentals</a></li>
+                        <li><a href="drills.html">Drills</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:info@fundamentalsfirst.com">calebcalebisthebest@gmail.com</a></p>
+                    <p>Location: Jewels International School of Kinsasha</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fundamentals First. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
